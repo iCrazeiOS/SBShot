@@ -1,0 +1,9 @@
+Package: com.icraze.sbshot
+Name: SBShot
+Version: 1.0
+Architecture: iphoneos-arm
+Description: CC toggle to enable silent screenshots
+Maintainer: iCraze
+Author: iCraze
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), com.opa334.ccsupport
