@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm /var/mobile/Library/Preferences/com.icraze.sbshotenabled | true
+rm /var/jb/var/mobile/Library/Preferences/com.icraze.sbshotenabled | true
