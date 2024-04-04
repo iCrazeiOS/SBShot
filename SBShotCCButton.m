@@ -5,9 +5,8 @@
 #define PATH ROOT_PATH_NS(@"/var/mobile/Library/Preferences/com.icraze.sbshotenabled")
 
 @implementation SBShotCCButton
-- (UIImage *)iconGlyph
-{
-    return [UIImage imageNamed:@"Icon" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
+-(UIImage *)iconGlyph {
+	return [UIImage imageNamed:@"Icon" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
 }
 
 -(BOOL)isSelected {
