@@ -1,6 +1,8 @@
 #import <Foundation/Foundation.h>
+#import <rootless.h>
+#import <UIKit/UIKit.h>
 
-#define PATH @"/var/mobile/Library/Preferences/com.icraze.sbshotenabled"
+#define PATH ROOT_PATH_NS(@"/var/mobile/Library/Preferences/com.icraze.sbshotenabled")
 
 OBJC_EXTERN UIImage *_UICreateScreenUIImage(void);
 void takeScreenshotAndSave() {

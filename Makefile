@@ -1,7 +1,5 @@
-export PREFIX = $(THEOS)2/toolchain/Xcode11.xctoolchain/usr/bin/
-export SDKVERSION = 12.2
 export ARCHS = arm64 arm64e
-
+export TARGET := iphone:clang:16.5:12.0
 INSTALL_TARGET_PROCESSES = SpringBoard
 
 include $(THEOS)/makefiles/common.mk

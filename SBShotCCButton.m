@@ -1,8 +1,15 @@
 #import "SBShotCCButton.h"
+#import <rootless.h>
+#import <UIKit/UIKit.h>
 
-#define PATH @"/var/mobile/Library/Preferences/com.icraze.sbshotenabled"
+#define PATH ROOT_PATH_NS(@"/var/mobile/Library/Preferences/com.icraze.sbshotenabled")
 
 @implementation SBShotCCButton
+- (UIImage *)iconGlyph
+{
+    return [UIImage imageNamed:@"Icon" inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
+}
+
 -(BOOL)isSelected {
 	return [[NSFileManager defaultManager] fileExistsAtPath:PATH];
 }
